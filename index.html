@@ -1,17 +1,413 @@
-I'm Juliana, a sophomore finance major at Rutgers Business School, who is motivated and eager to eager to apply analytical skills and financial knowledge to real-world challenges while building a foundation for a successful career in finance.
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliana | Finance Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-My skills include:
-  Sales & Marketing, Communication, Problem Solving, Teamwork & Collaboration, Time Management
-  Technological skills: Excel, Javascript, Microsoft Word
+    html {
+      scroll-behavior: smooth;
+    }
 
-Projects:
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f9fc;
+      color: #263449;
+      line-height: 1.7;
+    }
 
-1. I completed a project in the fall 2025 semester for a management skills class, that involved closely analyzing a problem that a business was facing, and propose methods to solve said issue. My group investigated the Livingston Dining Hall at Rutgers, and noticed the problem of  a remarkably high employee turnover rate. We conducted interviews with the manager and analyzed data from surveys that were sent to employees to analyze the impact that this issue had on how effectively the business was run. We also used this information to devise potential solutions to help mitigate the issue. Linked below is the document with our full analysis and data on the business's dilemma:
+    header {
+      background: #192b49;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-https://docs.google.com/document/d/1P0ITBPTwZBENoisXqPnZgUqs7xowL6mJhrFypbTTQ6M/edit?usp=sharing 
+    header h2 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
 
+    nav {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
 
-2. Also in the fall 2025 semester, I completed a project for an introduction to marketing class in which my group and I were required to pitch a business idea for an already established company that would help elevate their products. Our group designed a feature for the cosmetic company, e.l.f., that would help provide customized makeup looks, shade matches, and product recommendations for users. We designed this feature to add a unique approach to promoting the company that supports their business goals. Our project analyzes aspects of this feature such as how it connects to e.l.f's goals as a business, its potential benefits and downsides, a plan of how to implement and advertise this new feature, etc. We also conducted a brief survey to gather more information on our target market. Linked below is a presentation of our pitch and marketing analysis:
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
 
-https://docs.google.com/presentation/d/1QcbGMOGBgbRkiHncLtKgi-K8GkMydhcmqZg__VvsF34/edit?usp=sharing
+    nav a:hover {
+      color: #a9c9f5;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #192b49, #345783);
+      color: white;
+      padding: 100px 8% 110px;
+      text-align: center;
+    }
+
+    .hero p:first-child {
+      color: #c3d9f5;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero .subtitle {
+      font-size: 19px;
+      color: #e0e9f6;
+    }
+
+    .hero .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 27px;
+      border: 1px solid white;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .hero .button:hover {
+      background: white;
+      color: #192b49;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 55px 25px;
+    }
+
+    section {
+      margin-bottom: 65px;
+      scroll-margin-top: 30px;
+    }
+
+    .section-title {
+      color: #192b49;
+      font-size: 27px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #dce5f0;
+    }
+
+    .about-card, .education-card, .project-card {
+      background: white;
+      padding: 28px;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(26, 45, 73, 0.07);
+    }
+
+    .about-card p {
+      color: #4d5c70;
+      font-size: 16px;
+    }
+
+    .education-card h3 {
+      color: #192b49;
+      margin-bottom: 5px;
+    }
+
+    .education-card p {
+      color: #65748a;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(26, 45, 73, 0.07);
+    }
+
+    .skill-card h3 {
+      color: #345783;
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #edf3fb;
+      color: #29476f;
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 23px;
+    }
+
+    .project-card {
+      border-left: 4px solid #5278a8;
+    }
+
+    .project-number {
+      color: #5278a8;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .project-card h3 {
+      font-size: 21px;
+      color: #192b49;
+      margin: 7px 0;
+    }
+
+    .project-date {
+      color: #78869a;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      color: #4d5c70;
+      margin-bottom: 13px;
+    }
+
+    .project-card ul {
+      margin: 0 0 20px 20px;
+      color: #4d5c70;
+    }
+
+    .project-link {
+      display: inline-block;
+      background: #192b49;
+      color: white;
+      padding: 10px 17px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .project-link:hover {
+      background: #345783;
+    }
+
+    footer {
+      background: #192b49;
+      color: #dce5f0;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 70px 6%;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero .subtitle {
+        font-size: 16px;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding: 40px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Juliana</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p>Finance Student | Rutgers Business School</p>
+    <h1>Hi, I'm Juliana.</h1>
+    <p class="subtitle">
+      Aspiring Finance Professional | Analytical Thinker | Problem Solver
+    </p>
+    <a href="#about" class="button">Explore My Portfolio</a>
+  </div>
+
+  <main>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>
+          I'm a sophomore finance major at Rutgers Business School,
+          motivated and eager to apply analytical skills and financial
+          knowledge to real-world challenges while building a foundation
+          for a successful career in finance. I am passionate about
+          developing my professional skills, solving problems, and
+          collaborating with others to achieve meaningful results.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <h3>Rutgers Business School</h3>
+        <p>Rutgers University – New Brunswick, New Jersey</p>
+        <p>Bachelor's Degree in Finance</p>
+        <p>Sophomore | Expected Graduation: [Year]</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Professional Skills</h3>
+          <div class="tags">
+            <span class="tag">Sales & Marketing</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Teamwork & Collaboration</span>
+            <span class="tag">Time Management</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Technical Skills</h3>
+          <div class="tags">
+            <span class="tag">Microsoft Excel</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Microsoft Word</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Academic Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <span class="project-number">Project 01</span>
+          <h3>Employee Turnover Analysis –
+            Livingston Dining Hall</h3>
+          <p class="project-date">
+            Management Skills | Fall 2025
+          </p>
+          <p>
+            Collaborated with a group to investigate the high employee
+            turnover rate at Rutgers University's Livingston Dining Hall.
+            The project focused on identifying the causes of employee
+            turnover and understanding its impact on business operations.
+          </p>
+          <ul>
+            <li>Conducted interviews with the dining hall manager.</li>
+            <li>Analyzed employee survey data to identify workplace challenges.</li>
+            <li>Evaluated the impact of employee turnover on business efficiency.</li>
+            <li>Developed potential solutions to improve employee retention.</li>
+          </ul>
+          <a
+            href="https://docs.google.com/document/d/1P0ITBPTwZBENoisXqPnZgUqs7xowL6mJhrFypbTTQ6M/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link">
+            View Full Analysis ↗
+          </a>
+        </div>
+
+        <div class="project-card">
+          <span class="project-number">Project 02</span>
+          <h3>e.l.f. Cosmetics – Marketing
+            Strategy & Business Innovation</h3>
+          <p class="project-date">
+            Introduction to Marketing | Fall 2025
+          </p>
+          <p>
+            Collaborated on a marketing project to develop a new
+            digital feature for e.l.f. Cosmetics, designed to provide
+            personalized makeup looks, shade matching, and product
+            recommendations to customers.
+          </p>
+          <ul>
+            <li>Designed a personalized digital experience to support the company's products.</li>
+            <li>Evaluated the potential benefits and challenges of the proposed feature.</li>
+            <li>Conducted a survey to gather insights about the target market.</li>
+            <li>Developed an implementation and advertising strategy aligned with business goals.</li>
+          </ul>
+          <a
+            href="https://docs.google.com/presentation/d/1QcbGMOGBgbRkiHncLtKgi-K8GkMydhcmqZg__VvsF34/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link">
+            View Presentation ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Juliana | Finance Portfolio | Rutgers Business School</p>
+  </footer>
+
+</body>
+</html>
